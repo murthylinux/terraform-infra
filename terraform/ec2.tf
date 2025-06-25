@@ -6,7 +6,7 @@ resource "aws_key_pair" "vikingcloud" {
 resource "aws_instance" "vikingcloud_ec2" {
   ami                         = var.ami_id
   instance_type               = var.instance_type
-  subnet_id                   = var.subnet_id
+  subnet_id                   = aws_subnet.vc_public[0].id
   key_name                    = aws_key_pair.vikingcloud.key_name
   associate_public_ip_address = true
 
@@ -14,3 +14,5 @@ resource "aws_instance" "vikingcloud_ec2" {
     Name = "vikingcloud-ec2"
   }
 }
+
+

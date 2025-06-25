@@ -34,7 +34,3 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "subnet_id" {
-  type        = string
-  description = "Subnet to launch the EC2 in"
-}
