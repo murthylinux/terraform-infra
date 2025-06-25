@@ -1,0 +1,24 @@
+variable "aws_region" {
+  type        = string
+  description = "AWS region to deploy to region"
+}
+
+variable "vpc_cidr" {
+  type        = string
+  description = "VPC CIDR block"
+}
+
+variable "public_subnet_cidrs" {
+  type        = list(string)
+  description = "Comma-separated CIDRs for public subnets"
+}
+
+variable "private_subnet_cidrs" {
+  type        = list(string)
+  description = "Comma-separated CIDRs for private subnets"
+}
+
+variable "availability_zones" {
+  type        = list(string)
+  description = "Comma-separated availability zones"
+}

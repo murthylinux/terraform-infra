@@ -1,0 +1,19 @@
+
+# Local Terraform directories and files
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.terraform.lock.hcl
+
+
+
+# Crash logs
+crash.log
+
+# Sensitive or transient files
+terraform.tfvars
+override.tf
+override.tf.json
+
+# You SHOULD track this file:
+# !.terraform.lock.hcl
